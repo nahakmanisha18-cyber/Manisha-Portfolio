@@ -7,7 +7,10 @@ require("dotenv").config();
 const app = express();
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:5173"
+    origin: [
+        "https://manisha-portfolio-rho.vercel.app",
+        "http://localhost:5173"
+    ]
 }));
 app.use(express.json());
 
