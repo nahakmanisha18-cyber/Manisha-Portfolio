@@ -218,7 +218,6 @@
     font-weight: 500;
     text-shadow: 0 0 6px rgba(117, 203, 214, 0.2);
 }
-
 .hero-btn {
     padding: 12px 25px;
     font-size: 16px;
@@ -227,15 +226,20 @@
     cursor: pointer;
     font-weight: 600;
     background: transparent;
-    transition: 0.2s;
+    transition: all 0.2s ease;
     border: 2px solid #75cbd6;
+    margin-right: 13px;
 }
 
-.hero-btn:hover {
-    transition: 0.2s;
+.hero-btn:hover,
+.hero-btn:active,
+.hero-btn:focus {
+    color: #0e1720;
     background: linear-gradient(45deg, #75cbd6, #4aaec0);
     box-shadow: 0 0 30px #75cbd64f;
+    outline: none;
 }
+
 
 .hero-right img {
     width: 500px;

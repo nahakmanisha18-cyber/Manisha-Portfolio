@@ -22,6 +22,11 @@ const Hero = () => {
                             View My Work ↓
                         </a>
                     </button>
+                    <button className="hero-btn" data-aos="fade-right" data-aos-delay="100">
+                        <a href="/Manisha_Resume.pdf" className="text-decoration-none pro" download="Manisha_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                    </button>
                 </div>
                 <div className="hero-right" data-aos="fade-left" data-aos-delay="100">
                     <img src={heroImg} alt="hero" />

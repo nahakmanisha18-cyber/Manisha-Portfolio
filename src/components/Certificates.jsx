@@ -92,7 +92,7 @@ const Certificates = () => {
                                     {certificate.date}
                                 </span>
 
-                                <i className="bi bi-arrow-up-right certificate-arrow"></i>
+                                {/* <i className="bi bi-arrow-up-right certificate-arrow"></i> */}
                             </div>
                         </div>
                     ))}
