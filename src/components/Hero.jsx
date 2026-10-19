@@ -24,7 +24,7 @@ const Hero = () => {
                     </button>
                     <button className="hero-btn" data-aos="fade-right" data-aos-delay="100">
                         <a href="/Manisha_Resume.pdf" className="text-decoration-none pro" download="Manisha_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-download"></i> Download Resume
+                            <i class="fa-solid fa-download"></i> Download CV
                         </a>
                     </button>
                 </div>
