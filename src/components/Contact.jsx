@@ -23,7 +23,7 @@ const Contact = () => {
 
         try {
             const response = await fetch(
-                `${import.meta.env.VITE_API_URL}/api/contact`,
+                "http://localhost:5000/api/contact",
                 {
                     method: "POST",
                     headers: {

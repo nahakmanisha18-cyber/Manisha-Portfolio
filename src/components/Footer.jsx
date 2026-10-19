@@ -28,7 +28,7 @@ const Footer = () => {
                     </a>
 
                     <a href="https://www.threads.com/@ms_nahak.dev" className="social-link">
-                        <i class="fa-brands fa-threads"></i>
+                        <i className="fa-brands fa-threads"></i>
                     </a>
                 </div>
 

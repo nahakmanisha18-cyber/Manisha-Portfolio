@@ -5,13 +5,12 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
+
 app.use(cors({
-    origin: [
-        "https://manisha-portfolio-rho.vercel.app",
-        "http://localhost:5173"
-    ]
+    origin:"http://localhost:5173"
 }));
 app.use(express.json());
+
 const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -53,9 +52,14 @@ ${message}
             message: "Email sent successfully!"
         });
     } catch (error) {
-        console.error("Email error:", error);
+        console.error("Email error:", error.message);
+        console.error("Error code:", error.code);
+        console.error("Error command:", error.command);
+
         res.status(500).json({
-            message: "Failed to send email."
+            message: "Failed to send email.",
+            error: error.message,
+            code: error.code,
         });
     }
 });
