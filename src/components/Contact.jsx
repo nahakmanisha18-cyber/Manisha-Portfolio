@@ -23,7 +23,7 @@ const Contact = () => {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/contact",
+                "https://manisha-portfolio-8rt7.onrender.com/api/contact",
                 {
                     method: "POST",
                     headers: {
